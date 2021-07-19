@@ -24,7 +24,7 @@ class CreateFntransationsTable extends Migration
             $table->date('pay_date')->nullable();
             $table->timestamps();
 
-            $table->foreign('fncategory_id')->references('id')->on('fncategorys');
+            $table->foreign('fncategory_id')->references('id')->on('fncategories');
             $table->foreign('fnwallet_id')->references('id')->on('fnwallets');
 
         });

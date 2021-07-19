@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFncategorysTable extends Migration
+class CreateFncategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateFncategorysTable extends Migration
      */
     public function up()
     {
-        Schema::create('fncategorys', function (Blueprint $table) {
+        Schema::create('fncategories', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('sup_category');
@@ -32,6 +32,6 @@ class CreateFncategorysTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fncategorys');
+        Schema::dropIfExists('fncategories');
     }
 }

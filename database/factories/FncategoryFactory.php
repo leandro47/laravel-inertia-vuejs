@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Fncategorys;
+use App\Models\Fncategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class FncategorysFactory extends Factory
+class FncategoryFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Fncategorys::class;
+    protected $model = Fncategory::class;
 
     /**
      * Define the model's default state.

@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Fntransation extends Model
 {
     use HasFactory;
+
+    public function fncategory()
+    {
+        return $this->belongsTo(Fncategory::class);
+    }
+
+    public function fnwallet()
+    {
+        return $this->belongsTo(Fnwallet::class);
+    }
 }

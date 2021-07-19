@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class FncategorysSeeder extends Seeder
+class FncategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
