@@ -2,15 +2,22 @@
 
 return [
     /**
-     * FINANCES
+     * Pagina padrão para todos
+     */
+    "Home" => [
+        "route" => 'home'
+    ],
+
+    /**
+     * Finanças
      */
     "Finanças" => [
         "Cadastro" => [
-            "Categoria",
-            "Conta",
+            "Categoria" => ["route" => ""],
+            "Conta" => ["route" => ""],
         ],
         "Movimentações" => [
-            "Incluir"
+            "Incluir"=> ["route" => ""],
         ]
     ]
 ];

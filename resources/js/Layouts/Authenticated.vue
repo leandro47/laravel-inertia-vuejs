@@ -14,9 +14,9 @@
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <breeze-nav-link :href="route('home')" :active="route().current('home')">
-                                    Home
+                            <div v-for="(item, index) in itemsMenu" :key="index" class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <breeze-nav-link :item="item">
+                                    {{index }}
                                 </breeze-nav-link>
                             </div>
                         </div>
@@ -112,7 +112,11 @@
             BreezeNavLink,
             BreezeResponsiveNavLink,
         },
-
+        computed: {
+            itemsMenu() {
+                return this.$page.props.itemsMenu
+            }
+        },
         data() {
             return {
                 showingNavigationDropdown: false,
